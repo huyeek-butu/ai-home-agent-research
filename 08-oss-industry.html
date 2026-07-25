@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>开源持续学习重塑工业商业</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header class="cover">
+  <div class="cover-inner">
+    <span class="badge">开源范式·产业端</span>
+    <h1 class="cover-title">开源持续学习重塑工业商业</h1>
+    <p class="cover-sub">开源持续学习对产业链与商业模式的重构</p>
+    <div class="cover-meta">AI 家庭智能体 / 开源持续学习 研究系列 · 2026-07-25 · 文博 AI 研究笔记</div>
+    <a class="back-home" href="index.html">← 返回合集目录</a>
+  </div>
+</header>
+<div class="layout">
+  <aside class="toc">
+    <div class="toc-title">目录</div>
+    <div class="toc">
+<ul>
+<li><a href="#一-工业领域-从-数字化-到-生命化">一、工业领域：从"数字化"到"生命化"</a><ul>
+<li><a href="#1-智能制造-柔性生产终极形态-千厂千模">1. 智能制造：柔性生产终极形态——"千厂千模"</a></li>
+<li><a href="#2-重资产运营-预测性维护范式转移">2. 重资产运营：预测性维护范式转移</a></li>
+<li><a href="#3-流程工业-实时优化闭环">3. 流程工业：实时优化闭环</a></li>
+<li><a href="#4-工业软件-数字孪生从-静态仿真-到-动态生命体">4. 工业软件：数字孪生从"静态仿真"到"动态生命体"</a></li>
+</ul>
+</li>
+<li><a href="#二-商业领域-企业智能-私有化觉醒">二、商业领域：企业智能"私有化觉醒"</a><ul>
+<li><a href="#1-金融-风控模型-分布式免疫">1. 金融：风控模型"分布式免疫"</a></li>
+<li><a href="#2-零售与供应链-千店千链-千模千面">2. 零售与供应链：千店千链 × 千模千面</a></li>
+<li><a href="#3-商业服务-咨询与法律的知识套利终结">3. 商业服务：咨询与法律的知识套利终结</a></li>
+<li><a href="#4-软件开发-从-github-copilot-到-企业编码生命体">4. 软件开发：从 GitHub Copilot 到"企业编码生命体"</a></li>
+</ul>
+</li>
+<li><a href="#三-对产业权力结构的冲击-巨头护城河如何被腐蚀">三、对产业权力结构的冲击：巨头护城河如何被腐蚀</a><ul>
+<li><a href="#1-云厂商-api-税的黄昏与-android-陷阱">1. 云厂商：API 税的黄昏与"Android 陷阱"</a></li>
+<li><a href="#2-工业软件与-saas-巨头-从-功能锁定-到-知识中枢-竞争">2. 工业软件与 SaaS 巨头：从"功能锁定"到"知识中枢"竞争</a></li>
+<li><a href="#3-闭源-ai-巨头-openai-dilemma">3. 闭源 AI 巨头：OpenAI Dilemma</a></li>
+<li><a href="#4-数据主权终极反转-从-厂商资产-到-企业资产">4. 数据主权终极反转：从"厂商资产"到"企业资产"</a></li>
+</ul>
+</li>
+<li><a href="#四-新产业生态与投资机会图谱">四、新产业生态与投资机会图谱</a><ul>
+<li><a href="#1-基础设施层-持续学习-卖铲人">1. 基础设施层：持续学习"卖铲人"</a></li>
+<li><a href="#2-服务层-新职业诞生">2. 服务层：新职业诞生</a></li>
+<li><a href="#3-商业模式层-从软件订阅到-进化权-交易">3. 商业模式层：从软件订阅到"进化权"交易</a></li>
+<li><a href="#4-最易重估-最危险标的">4. 最易重估 / 最危险标的</a></li>
+</ul>
+</li>
+<li><a href="#五-暗礁-工业商业场景特殊风险">五、暗礁：工业商业场景特殊风险</a></li>
+<li><a href="#六-总结-工业商业-大分流">六、总结：工业商业"大分流"</a></li>
+<li><a href="#相关延伸">相关延伸</a></li>
+<li><a href="#摄入备注">摄入备注</a></li>
+</ul>
+</div>
+
+  </aside>
+  <main class="content">
+    
+<blockquote>
+<p>核心命题：持续学习（Continual / Lifelong Learning）的开源大模型，本质是 <strong>"中央发行的通用货币" → "可在本地铸造的专属通货"</strong>。对工业与商业的冲击比消费端更剧烈——因工商业核心竞争力恰在 <strong>非标知识（Know-how）的沉淀与进化壁垒</strong>。当一套开源权重能在断网环境中持续吸收特定车间噪音指纹、特定企业谈判风格、特定交易对手欺诈模式时，产业价值分配逻辑被重写。本文是 资源-开源持续学习重塑家庭Agent 的<strong>姊妹篇（产业端视角）</strong>：那篇从消费/家庭场景展开"安卓时刻"，本篇从工业与商业场景展开"大分流"；投资维度续 资源-AI家庭智能体产业与投资图谱，路径母题见 资源-AI家庭智能体三阶段路径，方向总纲见 资源-AI家庭智能体七大趋势，其"云厂商 API 税黄昏"批判直指 WorkBuddy 类 SaaS 订阅。</p>
+</blockquote>
+<h2 id="一-工业领域-从-数字化-到-生命化">一、工业领域：从"数字化"到"生命化"</h2>
+<p>工业是预训练大模型最难啃的骨头：数据敏感、环境非标、错误代价高。持续学习开源模型击中三处软肋。</p>
+<h3 id="1-智能制造-柔性生产终极形态-千厂千模">1. 智能制造：柔性生产终极形态——"千厂千模"</h3>
+<ul>
+<li>现状：工业视觉检测/工艺优化 = "开源/闭源基座 + 私有数据一次性微调"，上线即冻结。产品换型/原料批次变化/设备老化信号漂移 → 准确率断崖下跌，须重购算法公司"标注-训练-部署"服务。</li>
+<li>持续学习范式：</li>
+<li><strong>产线级活体模型</strong>：每厂/每条产线部署持续学习开源基座，运行中持续吸收新缺陷样本/工艺参数/老师傅经验，权重随时间进化。换型无需外部算法工程师，模型像熟练工"带薪学习"几天恢复精度。</li>
+<li><strong>小样本/零样本适应</strong>：元学习（Meta-learning）/ prompt-tuning 持续进化，看 3-5 张新缺陷照即自主扩展识别，非重训整个分类头。</li>
+<li><strong>工艺自主寻优</strong>：注塑/锻造/半导体刻蚀等强耦合过程变量，模型持续关联实时反馈（温度/压力/振动）与质量结果，自主发现工艺窗口隐性漂移并建议调整 → "工艺自我进化"。</li>
+<li><strong>产业冲击</strong>：传统"AI 视觉公司"项目制（按点位/迭代收费）模式被摧毁。工厂拥有自进化开源基座后，对外部算法依赖从"长期雇佣"降为"初期接种"。</li>
+</ul>
+<h3 id="2-重资产运营-预测性维护范式转移">2. 重资产运营：预测性维护范式转移</h3>
+<ul>
+<li>现状两条路径：①固定阈值（简单滞后）②离线监督模型（需大量历史故障数据，难应对新故障模式）。</li>
+<li>第三条路径：<strong>设备专属"退化指纹学习"</strong>——每台关键设备（风机/压缩机/高铁轴承）跑本地化开源模型副本，持续学习自身振动/声发射/电流时序演化模式；不仅能识别"已见故障"，更能发现<strong>"异常新模式"</strong>（轴承磨损频谱与历史库不匹配时，通过持续学习标为新退化轨迹而非漏报）；进一步学习工厂特有<strong>工况组合</strong>（南高湿/北高粉尘对同一型号不同影响）→ 真正"因地制宜"。</li>
+<li><strong>投资映射</strong>：设备 OEM（西门子/GE/三一/汇川）从"卖硬件+卖维保"转向"卖预装进化脑硬件"；第三方算法公司价值向<strong>"初始蒸馏工具"</strong>与<strong>"进化安全审计"</strong>迁移。</li>
+</ul>
+<h3 id="3-流程工业-实时优化闭环">3. 流程工业：实时优化闭环</h3>
+<ul>
+<li>化工/冶金/电力核心 = 多变量动态平衡，传统 APC（先进过程控制）模型数月失效。</li>
+<li>持续学习开源模型 = "7×24 在线工艺工程师"：边缘侧持续拟合 DCS 海量实时流，捕捉催化活性衰减/热交换效率下降等慢变参数；不需回传云端（流程数据极敏感），开源权重+本地持续学习满足<strong>物理隔离（Air-gapped）</strong>；输出从"建议操作工"升级为<strong>直接写入控制系统设定值（Set-point）</strong> → 真 Autonomous Control。</li>
+<li><strong>产业冲击</strong>：DCS/PLC 巨头（霍尼韦尔/艾默生/和利时）须拥抱范式否则控制逻辑被上层 AI 架空；国产替代窗口——开源降低工业智能基座门槛，中国厂商以"开放进化架构"挑战封闭生态。</li>
+</ul>
+<h3 id="4-工业软件-数字孪生从-静态仿真-到-动态生命体">4. 工业软件：数字孪生从"静态仿真"到"动态生命体"</h3>
+<ul>
+<li>现状数字孪生 = "高保真但呆滞"3D 模型，需人工定期校准。</li>
+<li>CAD/CAE/PLM + 持续学习结合：孪生体持续吸收 IoT 实机数据自动修正仿真参数（实际材料疲劳系数/热阻）；设计阶段模型（MBSE）交付后持续学生现表现，反向驱动下一代设计 → "设计-制造-服役-进化设计"闭环。</li>
+<li><strong>对达索/PTC/西门子冲击</strong>：若开源持续学习模型能理解并生成 CAD 特征、自主阅读执行工程变更单（ECO），工业软件巨头核心壁垒（复杂 GUI + 多年功能模块）可能被"自然语言交互 + 持续学习 Agent"绕过。</li>
+</ul>
+<h2 id="二-商业领域-企业智能-私有化觉醒">二、商业领域：企业智能"私有化觉醒"</h2>
+<p>商业竞争核心 = 信息差与决策速度。持续学习开源模型让每企业构建"私有化、越用越懂业务的企业大脑"，无需向云厂/咨询公司持续输血。</p>
+<h3 id="1-金融-风控模型-分布式免疫">1. 金融：风控模型"分布式免疫"</h3>
+<ul>
+<li>现状：反欺诈/反洗钱/信贷风控由总部集中训练定期下发，新型欺诈（某地区农商行钓鱼话术）从出现到被中心模型捕获以周计；中心模型为泛化牺牲精准。</li>
+<li><strong>分布式风控免疫</strong>：每行/每客户经理终端跑本地持续进化模型，实时学当地最新欺诈模式/商圈景气度/客户行为漂移；mutations 通过<strong>联邦化持续学习</strong>（加密贡献梯度更新）回饲全局基座，单点数据不出域又实现全局免疫升级；信用评估从"历史报表静态评分"进化"企业运营数据流活体呼吸"。</li>
+<li><strong>对巨头冲击</strong>：金融 AI 高毛利源 = "黑盒模型 + 昂贵咨询部署"。开源持续学习使中小金融机构首获与头部同级的自进化风控能力，<strong>定价权从"模型精度"转向"持续学习框架稳定性与可解释性审计"</strong>。</li>
+</ul>
+<h3 id="2-零售与供应链-千店千链-千模千面">2. 零售与供应链：千店千链 × 千模千面</h3>
+<ul>
+<li><strong>需求预测</strong>：每区域仓/每家店周边人群/气候/本地事件（开学/庙会）不同，持续学习让每节点自主进化本地预测，非总部统一引擎。</li>
+<li><strong>动态定价与选品</strong>：便利店/加油站定价 Agent 据门店周边 500m 实时人流/竞品价/库存保质期持续学微调 → "单店级小微大脑网络"。</li>
+<li><strong>对亚马逊/阿里冲击</strong>：若每品牌商私域跑持续学习开源模型自主管需求预测与库存，电商平台作为"数据中介与算法地主"抽成地位松动。</li>
+</ul>
+<h3 id="3-商业服务-咨询与法律的知识套利终结">3. 商业服务：咨询与法律的知识套利终结</h3>
+<ul>
+<li>顶级咨询（麦肯锡/BCG）与律所核心模式 = "把 A 行业经验抽象卖 B 行业"——<strong>知识空间套利</strong>。</li>
+<li>持续学习开源模型终结套利：制造企业部署开源基座后持续投喂 20 年董事会纪要/供应链纠纷/产线决策与结果，三年后对该企业生产组织/采购节奏/客户博弈理解<strong>远超空降顾问</strong>；律所持续学本企业所有历史合同/诉讼/法官偏好，合同审查与诉讼策略建议比通用法律 AI 更精准。</li>
+<li><strong>非消亡而是价值重构</strong>：咨询从"卖知识"转"卖变革管理 + 初始架构设计"；律所转"高阶诉讼策略 + 监管博弈"。中低阶知识服务工作被企业自有进化体吞噬。</li>
+</ul>
+<h3 id="4-软件开发-从-github-copilot-到-企业编码生命体">4. 软件开发：从 GitHub Copilot 到"企业编码生命体"</h3>
+<ul>
+<li>通用代码助手（Copilot）不懂祖传代码库/未文档化业务规则/特有技术债。</li>
+<li>持续学习开源代码模型（进化 Code Llama / DeepSeek-Coder）本地私有化部署后：持续吸收企业代码库（每 PR/每 Code Review 注释/每 Jira ticket）；<strong>越老越妖</strong>——服务 5 年后对公司代码库理解超任何新员工甚至架构师；<strong>组织记忆固化</strong>——老员工离职，编码风格/决策逻辑/边缘 case 处理经验编码进权重成"不退休的组织记忆"。</li>
+<li><strong>对微软/GitHub 冲击</strong>：若企业发现本地持续进化开源模型比云端通用 Copilot 更懂自己且数据不外流，付费意愿从"按人头订阅 SaaS"转"买断 + 本地进化基础设施"——微软最不愿见场景。</li>
+</ul>
+<h2 id="三-对产业权力结构的冲击-巨头护城河如何被腐蚀">三、对产业权力结构的冲击：巨头护城河如何被腐蚀</h2>
+<h3 id="1-云厂商-api-税的黄昏与-android-陷阱">1. 云厂商：API 税的黄昏与"Android 陷阱"</h3>
+<ul>
+<li>AWS/Azure/GCP 经 Bedrock/Azure OpenAI 收"AI API 税"。持续学习开源模型三方向瓦解税基：训练需求本地化（无需上传数据 Fine-tune）/ 推理需求边缘化（本地进化够专精后大量推理不调云端）/ 开源权重不可逆（云厂托管 Llama 只是算力租赁，无闭源 API 排他锁定）。</li>
+<li>云厂陷 Android 困境：拥抱开源则沦为硬件管道，抵制则被边缘化。反击推"持续学习即服务（CLaaS）"但与数据本地化诉求矛盾。</li>
+</ul>
+<h3 id="2-工业软件与-saas-巨头-从-功能锁定-到-知识中枢-竞争">2. 工业软件与 SaaS 巨头：从"功能锁定"到"知识中枢"竞争</h3>
+<ul>
+<li>SAP/Salesforce/西门子护城河 = 数据模式（Schema）+ 功能模块锁定。开源 Agent 能自然语言理解业务并自主编写/调整工作流数据模式 → 迁移成本降：企业用开源持续学习模型 + 低成本库逐步替代 ERP 决策模块；壁垒从"功能 completeness"转"物理世界精准耦合度"——恰是持续学习模型本地部署后能逼近的。</li>
+</ul>
+<h3 id="3-闭源-ai-巨头-openai-dilemma">3. 闭源 AI 巨头：OpenAI Dilemma</h3>
+<ul>
+<li>OpenAI/Anthropic 模式 = 闭源 + 集中训练 + API 分发。持续学习开源模型双杀：开源层（Llama/DeepSeek/Qwen 已证基座追近闭源）+ 持续学习层（社区解灾难性遗忘与对齐后，闭源"更新优势"被稀释——本地模型每天进化，不依赖总部季度升级）。</li>
+<li>防御：收购持续学习框架公司；推动监管——以"持续学习不可解释性/安全风险"游说对本地可进化模型施合规限制（未来 AI 监管战焦点）。</li>
+</ul>
+<h3 id="4-数据主权终极反转-从-厂商资产-到-企业资产">4. 数据主权终极反转：从"厂商资产"到"企业资产"</h3>
+<ul>
+<li>预训练时代数据经 API 回流巨头成其护城河；持续学习开源时代数据留本地，<strong>进化后权重本身成企业核心资产</strong>——如工厂设备折旧表，未来现<strong>"模型权重资产表"</strong>。</li>
+</ul>
+<h2 id="四-新产业生态与投资机会图谱">四、新产业生态与投资机会图谱</h2>
+<h3 id="1-基础设施层-持续学习-卖铲人">1. 基础设施层：持续学习"卖铲人"</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">方向</th>
+<th style="text-align: left;">核心机会</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>端边训练芯片</strong></td>
+<td style="text-align: left;">支持低功耗在线学习（On-device Training）NPU/TPU，非仅推理；工业级宽温/抗干扰/长寿命边缘训练卡是蓝海</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>持续学习框架</strong></td>
+<td style="text-align: left;">解灾难性遗忘算法库（EWC/Replay/弹性权重巩固工业级实现）、参数高效更新（On-device LoRA/Adapter 演进）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>模型版本控制（MLOps 2.0）</strong></td>
+<td style="text-align: left;">工业模型须如软件管理版本/回滚/A-B 测试；Git for Models、模型_diff、权重快照存储成新基础设施</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>联邦持续学习网关</strong></td>
+<td style="text-align: left;">让 Thousands of 边缘节点不泄原始数据协同进化共享基座，保留本地特化层</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-服务层-新职业诞生">2. 服务层：新职业诞生</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">方向</th>
+<th style="text-align: left;">核心机会</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>数据策展（Data Curation）</strong></td>
+<td style="text-align: left;">企业需"模型营养师"筛什么数据值得学、什么必须遗忘（过时工艺/偏见决策）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>对齐审计与护栏</strong></td>
+<td style="text-align: left;">工业模型学"坏"代价巨大（偷工减料/欺诈套利）；持续学习期价值观监控/drift 检测/安全回滚服务将现</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>领域蒸馏工场</strong></td>
+<td style="text-align: left;">将通用开源模型蒸馏为特定工业领域（轴承/化工/PCB）"种子模型"，降企业初始部署门槛</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-商业模式层-从软件订阅到-进化权-交易">3. 商业模式层：从软件订阅到"进化权"交易</h3>
+<ul>
+<li><strong>Evolution-as-a-Service（EaaS）</strong>：不卖模型，卖"持续学习能力保障"——承诺部署后一年适应环境漂移且不遗忘核心常识。</li>
+<li><strong>模型保险</strong>：承保因持续学习致模型漂移事故（如错误工艺建议致停产）。</li>
+<li><strong>权重市场</strong>：合规框架下企业间交易<strong>脱敏后进化权重层</strong>（非数据），实现跨企业知识复用。</li>
+</ul>
+<h3 id="4-最易重估-最危险标的">4. 最易重估 / 最危险标的</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类别</th>
+<th style="text-align: left;">逻辑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>看多：工业自动化本土厂商</strong></td>
+<td style="text-align: left;">掌场景/设备接口/客户关系 + 开源持续学习基座，直挑西门子/罗克韦尔</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>看多：企业级 NAS/边缘服务器厂商</strong></td>
+<td style="text-align: left;">从存储设备升"企业进化中枢"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>看多：工业检测硬件商</strong></td>
+<td style="text-align: left;">摄像头/传感器嵌持续学习能力，从硬件商升"自主进化服务商"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>看空：纯项目制 AI 算法公司</strong></td>
+<td style="text-align: left;">无平台化持续学习能力"来料加工"视觉公司价值速归零</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>看空：无私有化部署能力通用 SaaS</strong></td>
+<td style="text-align: left;">企业有自进化大脑，通用 CRM/ERP 决策模块被架空</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>看空：依赖 API 差价 AI 中间商</strong></td>
+<td style="text-align: left;">开源持续学习切断 API 调用需求</td>
+</tr>
+</tbody>
+</table>
+<h2 id="五-暗礁-工业商业场景特殊风险">五、暗礁：工业商业场景特殊风险</h2>
+<ol>
+<li><strong>灾难性遗忘物理代价</strong>：工厂模型学新产品遗忘"高温高压安全红线" → 爆炸非文本幻觉。工业级持续学习须<strong>"关键权重硬锁死"</strong>机制。</li>
+<li><strong>供应链级联污染</strong>：Tier-1 供应商进化模型被恶意数据污染（注入伪造质检记录），错误认知经供应链传下游整车厂。</li>
+<li><strong>可解释性死局</strong>：持续学习权重动态变，监管（FDA/FAA/市场监管局）如何审计"昨天和今天不一样"的模型？成金融/医疗/航空落地最大障碍。</li>
+<li><strong>开源协议传染性</strong>：基座若 GPL 类强 copyleft，企业本地持续学习后商业模型权重是否须开源？构成法律不确定性。</li>
+</ol>
+<h2 id="六-总结-工业商业-大分流">六、总结：工业商业"大分流"</h2>
+<ul>
+<li>预训练大模型时代 AI 是<strong>"帝国主义"</strong>——少数巨头中心训练，向全球征算力与数据税。</li>
+<li>持续学习开源大模型时代 AI 是<strong>"联邦制"</strong>——每工厂/每门店/每企业拥自治、不断进化的数字生命体，数据主权回归场景持有者。</li>
+<li>启示：最硬壁垒非"模型参数规模"而是<strong>"场景封闭度 + 数据闭环速度 + 进化安全性"</strong>；最大赢家是掌物理入口（设备/传感器/产线）与行业 Know-how 的传统产业龙头，非仅拥最大 GPU 集群的云巨头；最彻底变化是<strong>企业"学习速度"替代"规模经济"成决定性竞争变量</strong>——能持续学习、快速适应的中小企业，将杀死僵化庞大的官僚型巨头。</li>
+</ul>
+<h2 id="相关延伸">相关延伸</h2>
+<ul>
+<li>底层机制续篇：资源-开源持续学习自组织硬件演化 —— 同一"持续学习开源模型"母题的"软硬件共同演化"维度：六种演化模式 + 技术支撑表 + 产业权力终极冲击 + 熵增陷阱。与本篇（产业端视角）及家庭 Agent 篇（消费端视角）形成"视角→机制"对偶。</li>
+</ul>
+<h2 id="摄入备注">摄入备注</h2>
+<ul>
+<li>用户原创产业权力结构分析，未引外部权威来源；本笔记仅做结构化提炼，未杜撰出处。</li>
+<li>属纯文本灵感（含多张表格），无 HTML / 图表等可生成实体实例，故未单独生成实例文件。</li>
+<li>互链：资源-开源持续学习重塑家庭Agent（姊妹篇·消费端家庭视角，已在其「相关延伸」段补回链）、资源-AI家庭智能体产业与投资图谱（投资维度续）、资源-AI家庭智能体三阶段路径（路径母题）、资源-AI家庭智能体七大趋势（方向篇）、WorkBuddy（直指云厂商 API 税/ SaaS 订阅，已在其「相关」段补回链，家庭场景延伸第五条）。</li>
+</ul>
+  </main>
+</div>
+<button class="totop" id="totop" aria-label="回到顶部">↑</button>
+<footer class="site-footer">
+  <p>本文为用户原创框架研究笔记（AI 家庭智能体 / 开源持续学习 系列），沉淀于个人知识库，供研究参考。</p>
+</footer>
+<script>
+window.addEventListener('scroll',function(){
+  var h=document.documentElement;
+  var sc=h.scrollTop, m=h.scrollHeight-h.clientHeight;
+  document.getElementById('progress').style.width=(m>0?(sc/m*100):0)+'%';
+  document.getElementById('totop').style.opacity=sc>400?1:0;
+});
+document.getElementById('totop').onclick=function(){window.scrollTo({top:0,behavior:'smooth'})};
+</script>
+</body>
+</html>
