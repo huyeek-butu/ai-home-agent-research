@@ -111,10 +111,12 @@ ai-home-agent-research/
 |---|---|---|
 | GitHub repo | ✅ Done | Content archived |
 | GitHub Pages | ✅ Done | Site live |
-| Zhihu | ⏳ Pending | `articles/**/*.zhihu.md` ready to paste |
+| Zhihu | 🔶 1/6 published | First piece (Trend Study) published; 5 pending |
 | WeChat Official Account | ⏳ Pending | `articles/**/*.wechat.md` ready |
 | Industry media | ⏳ Pending | Suggest submitting investment / open-source pieces to 36Kr / 机器之心 |
 | Self-Organizing Hardware | 🔒 Archive only | Not public |
+
+> **Published (Zhihu)**: ① AI Home-Butler Agent Trend Study (No.01) → https://zhuanlan.zhihu.com/p/2064666382520825199
 
 ---
 
